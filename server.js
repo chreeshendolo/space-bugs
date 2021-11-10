@@ -28,4 +28,4 @@ const server = http.createServer(function (request, response) {
 
 server.on('error', console.log.bind(console));
 
-server.listen(80, console.log.bind(console, `HTTP SERVER LISTENING ON: ${80}`) );
+server.listen(80, console.log.bind(console, `HTTP SERVER LISTENING ON: ${80}`));
