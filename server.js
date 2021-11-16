@@ -1,6 +1,12 @@
 const fs = require("fs");
 const http = require("http");
 
+const server = http.createServer(requestHandler);
+
+server.on('error', console.log.bind(console));
+
+server.listen(80, console.log.bind(console, `HTTP SERVER LISTENING ON: ${80}`));
+
 const routing = {
 	html: "text/html",
 	js: "text/js",
@@ -10,7 +16,7 @@ const routing = {
 	ico: "image/x-icon",
 };
 
-const server = http.createServer(function (request, response) {
+function requestHandler(request, response) {
 	const path = "./lib" + (request.url === "/" ? "/index.html" : request.url);
 	const type = routing[path.split(".")[2]];
 
@@ -23,9 +29,8 @@ const server = http.createServer(function (request, response) {
 
 	response.setHeader("Content-Type", type);
 
-	fs.createReadStream(path).pipe(response);
-});
+	const readStream = fs.createReadStream(path);
+	const pipe = readStream.pipe(response);
 
-server.on('error', console.log.bind(console));
-
-server.listen(80, console.log.bind(console, `HTTP SERVER LISTENING ON: ${80}`));
+	pipe.on("error", function (e) { console.log(e)})
+}
