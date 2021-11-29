@@ -4,13 +4,13 @@
 
 ## NEEDS
 
+* Sprites
+	* Unique easily distinguishable sprites for every tile and entity in the game
+
 * A finished level (at least the 32x32)
 	* Wall placement
 	* Vent Placement
 	* Enemy placement
-
-* Sprites
-	* Unique easily distinguishable sprites for every tile and entity in the game
 
 * GAME START
 	* Some kind of screen to initialize the experience
@@ -19,6 +19,10 @@
 	* Concrete win condition
 	* Something to conclude win or loss, and maybe restart
 
+* Death Screen
+	* Stats?
+	* Play again button
+
 * SFX
 	* Unique sound effects for every important thing in the game
 
@@ -26,14 +30,9 @@
 
 ## WANTS
 
-* Death screen
-	* Stats?
-	* Play again button
-
-* Enemies
-	* Varied enemy types
-		* Sniper
-		* Bruiser (High health, maybe slow, maybe even BIG)
+* Player Vision
+	* Some effect that we agree upon
+	* It has to **compliment** the theme and mechanics
 
 * Better AI
 	* Better LOS
@@ -44,9 +43,10 @@
 	* Better escalation
 	* Better deescalation
 
-* Player Vision
-	* Some effect that we agree upon
-	* It has to **compliment** the theme and mechanics
+* Enemies
+	* Varied enemy types
+		* Sniper
+		* Bruiser (High health, maybe slow, maybe even BIG)
 
 * Sprite work
 	* Tile system (draws contextual tile)
