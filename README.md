@@ -4,14 +4,6 @@
 
 ## NEEDS
 
-* Sprites
-	* Unique easily distinguishable sprites for every tile and entity in the game
-
-* A finished level (at least the 32x32)
-	* Wall placement
-	* Vent Placement
-	* Enemy placement
-
 * GAME START
 	* Some kind of screen to initialize the experience
 
@@ -25,14 +17,14 @@
 
 * SFX
 	* Unique sound effects for every important thing in the game
+	* Hosting/Infesting
+	* Discovery
+	* Parasite & Gunner: Taking damage
+	* Parasite & Gunner: Death sound
 
 * Known bugs need to be fixed (but they might not exist after we remove/clean things up anyway)
 
 ## WANTS
-
-* Player Vision
-	* Some effect that we agree upon
-	* It has to **compliment** the theme and mechanics
 
 * Better AI
 	* Better LOS
@@ -48,8 +40,14 @@
 		* Sniper
 		* Bruiser (High health, maybe slow, maybe even BIG)
 
+* Some real story
+
+## DEFERRED
+* Player Vision
+	* Some effect that we agree upon
+	* It has to **compliment** the theme and mechanics
+
 * Sprite work
-	* Tile system (draws contextual tile)
 	* Unique frame for a given state or action
 	* Animations
 
@@ -63,4 +61,14 @@
 * More Levels
 	* How to load chunks at a time?
 
-* Some real story
+## DONE
+* Sprite work
+	* Tile system (draws contextual tile)
+
+* Sprites
+	* Unique easily distinguishable sprites for every tile and entity in the game
+
+* A finished level (at least the 32x32)
+	* Wall placement
+	* Vent Placement
+	* Enemy placement
