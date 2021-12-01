@@ -2,10 +2,18 @@
 
 # PRIORITIES:
 
-## NEEDS
+## AWARDS
 
-* GAME START
-	* Some kind of screen to initialize the experience
+* Mercy
+	* Kill nothing
+
+* Justice
+	* Kill all enemies
+
+* Chameleon
+	* Infest all possible types
+
+## NEEDS
 
 * GAME END
 	* Concrete win condition
@@ -62,6 +70,10 @@
 	* How to load chunks at a time?
 
 ## DONE
+
+* GAME START
+	* Some kind of screen to initialize the experience
+
 * Sprite work
 	* Tile system (draws contextual tile)
 
